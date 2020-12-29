@@ -21,6 +21,7 @@ int Scatter(const std::string& x,
     Py_Initialize();
     PyRun_SimpleString("import sys");
     PyRun_SimpleString("sys.path.append(\".\")");
+    // TODO use cmake to set path. 
     PyRun_SimpleString("sys.path.append(\"/srv/conda/envs/notebook/include/\")");
     pName = PyUnicode_DecodeFSDefault("scatter");
 
