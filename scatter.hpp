@@ -6,13 +6,13 @@
 #include <string>
 
 int Scatter(const std::string& x,
-              const std::string& y,
-              const std::string& a,
-              const std::string& c,
-              const int size,
-              const std::string& filename = "output.gif",
-              const int width = 2000,
-              const int height = 4000)
+            const std::string& y,
+            const std::string& a,
+            const std::string& c,
+            const int size,
+            const std::string& filename = "output.gif",
+            const int width = 2000,
+            const int height = 4000)
 {
     PyObject *pName, *pModule, *pFunc;
     PyObject *pArgs, *pValue;
